@@ -1,0 +1,22 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int arr[]=new int[100000];
+		int T=sc.nextInt();
+		while(T--!=0){
+		    int n=sc.nextInt();
+		    for(int i=0;i<n+2;i++){
+		    arr[i]=sc.nextInt();
+	           int index=Math.abs(arr[i])-1;
+	           if(arr[index]<0) 
+	           System.out.printf(index+1+" ");
+	           else
+	           arr[index]=-arr[index];
+		}
+	}
+}
+}
