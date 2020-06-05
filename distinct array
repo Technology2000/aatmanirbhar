@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int arr[]=new int[10000000];
+	int	T=sc.nextInt();
+		while(T-->0){
+		    int n=sc.nextInt();
+		    for(int i=0;i<n;i++)
+		    arr[i]=sc.nextInt();
+		    Arrays.sort(arr,0,n-1);
+		   for(int k=0;k<n;k++){
+		        while(k<n-1 &&arr[k]==arr[k+1]){
+		            k++;
+}
+		            System.out.print(arr[k]+" ");
+		   }
+       }
+       }
+       }
