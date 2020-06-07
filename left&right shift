@@ -1,0 +1,42 @@
+import java.util.*;
+public class Solution{
+Scanner sc=new Scanner(System.in());
+public void method(){
+int n=sc.nextInt();   //number of elements in an array.
+for(int i=;i<n;i++){
+arr[i]=sc.nextInt();  //entering elements in array.
+}
+int s=sc.nextInt();   //set of queries.
+for(int i=0;i<s;i++){   
+int q=sc.nextInt();    //query(1 or 2).
+int k=sc.nextInt();    //no.of times array should be shifted.
+if(q==1){                  //leftshift
+for(int i=0;i<k;i++){
+int prev1=a[0];
+for(int j=0;j<n;j++){
+int temp1=a[j];
+a[j]=prev1;
+prev=temp1;
+}
+}
+}
+
+else if(q==2){                   //right shift
+for(int i=0;i<k;i++){
+int prev2=a[n-1];
+for(int j=0;j<n;j++){
+int temp2=a[j];
+a[j]=prev2;
+prev2=temp2;
+}
+}
+}
+else{
+System.out.pritnln("entered wrong query");
+}
+}
+for(int i=0;i<n;i++){
+System.out.pritnln (arr[i]);   //printing the array elements after performing all queries.
+}
+}
+}
